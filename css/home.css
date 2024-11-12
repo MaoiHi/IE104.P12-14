@@ -20,8 +20,8 @@ body{
 }
 
 #header__logo--resize{
-    width: 150px;
-    height: 100px;
+    width: 120px;
+    height: 80px;
 }
 
 .header__flex-navigation-col{
@@ -38,6 +38,12 @@ body{
 
 .header__login-box{
     width: 130px;
+    cursor: pointer;
+    transition: color 0.5s ease;
+}
+
+.header__login-box:hover{
+    color: #9e5b2a;
 }
 
 .icon-circle {
@@ -89,10 +95,10 @@ body{
     height: 230px;
     text-align: center;
     color: black;
-    background-color: #ecddc6;
+    background-color: #f2d7bd;
     opacity: 0;
     transform: translateY(-20px);
-    transition: opacity 1s ease, transform 0.75s ease;
+    transition: opacity 1s ease, transform 1s ease;
     visibility: hidden;
     cursor: default;
 }
