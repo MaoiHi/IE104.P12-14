@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/login-popup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<body>
+    <div>
+        <div class="header__flex-container">
+
+            <div class="header__flex-logo-col">
+                <img src="logo/logo.png" alt="" id="header__logo--resize">
+            </div>
+
+            <div class="header__flex-navigation-col header__grid-container">
+                <div class="header__grid-item">
+                    <b>Cà phê</b>
+                </div>
+                <div class="header__grid-item header__menu">
+                    <b>Menu</b>
+                    <div class="header__menu-content">
+                        <div class="header__menu-content-grid-container">
+                            <div style="list-style-type: none;" class="header__menu-content-grid-item">
+                                <br>
+                                <div style="font-size: 20px;">
+                                    <u><b><i>Coffee</i></b></u>
+                                </div>
+                                <div style="display: flex">
+                                    <div style="flex: 1; font-size: 15px;">
+                                        <br>Cà phê đen <br>
+                                        <br>Cà phê sữa <br>
+                                        <br>Bạc xỉu <br>
+                                        <br>Americano <br>
+                                    </div>
+                                    <div style="flex: 1; font-size: 15px;">
+                                        <br>Cappuccino <br>
+                                        <br>Espresso <br>
+                                        <br>Latte <br>
+                                        <br>Macchiato <br>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="list-style-type: none;" class="header__menu-content-grid-item">
+                                <br>
+                                <div style="font-size: 20px;">
+                                    <u><b><i>Tea</i></b></u>
+                                </div>
+                                <div style="display: flex">
+                                    <div style="flex: 1; font-size: 15px;">
+                                        <br>Trà táo <br>
+                                        <br>Trà chanh <br>
+                                        <br>Trà đào <br>
+                                        <br>Trà sữa <br>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="list-style-type: none;" class="header__menu-content-grid-item">
+                                <br>
+                                <div style="font-size: 20px;">
+                                    <u><b><i>Others</i></b></u>
+                                </div>
+                                <div style="display: flex">
+                                    <div style="flex: 1; font-size: 15px;">
+                                        <br>Đá xay <br>
+                                        <br>Đá xay Matcha <br>
+                                        <br>Mochi <br>
+                                        <br>Tiramisu <br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__grid-item" style="width: 150px;">
+                    <b>Cảm hứng CloudFee</b>
+                </div>
+                <div class="header__grid-item">
+                    <b>Cửa hàng</b>
+                </div>
+                <div class="header__grid-item">
+                    <b>Tuyển dụng</b>
+                </div>
+            </div>
+            <div class="header__flex-login-col">
+                <div class="header__login-box" onclick="openPopup()">
+                    <span class="icon-circle">
+                        <i class="fas fa-user"></i>
+                    </span>
+                    &nbsp;<b><u>Đăng nhập</u></b>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; font-size: 25px; color: #A52A2A;">
+            <b>CHƯƠNG TRÌNH KHUYẾN MÃI</b>
+        </div>
+
+        <div class="body-content__image-slider">
+            <div class="body-content__image-slide active">
+                <img src="images/ads_1.png" alt="" class="body-content__image-slider--resize">
+            </div>
+            <div class="body-content__image-slide">
+                <img src="images/ads_3.jpg" alt="" class="body-content__image-slider--resize">
+            </div>
+            <div class="body-content__image-slide">
+                <img src="images/ads_4.jpg" alt="" class="body-content__image-slider--resize">
+            </div>
+            <div class="body-content__image-slide">
+                <img src="images/ads_5.jpg" alt="" class="body-content__image-slider--resize">
+            </div>
+        </div>
+
+        <br>
+        <div style="text-align: center; font-size: 25px; color: #4E342E;">
+            <b>CÁC SẢN PHẨM NỔI BẬT</b>
+        </div>
+
+        <br>
+
+        <div class="body-content__special-menu-grid-container">
+            <div class="body-content__special-menu-grid-item">
+                <img src="coffee_images/ca-phe-sua.png" alt="" class="body-content__item-image--resize">
+                <br><br>
+                Cà phê sữa
+                <br>
+                <i>30.000đ</i>
+            </div>
+            <div class="body-content__special-menu-grid-item">
+                <img src="coffee_images/BAC-XIU.png" alt="" class="body-content__item-image--resize">
+                <br><br>
+                Bạc xỉu
+                <br>
+                <i>35.000đ</i>
+            </div>
+            <div class="body-content__special-menu-grid-item">
+                <img src="coffee_images/da-xay.png" alt="" class="body-content__item-image--resize">
+                <br><br>
+                Đá xay
+                <br>
+                <i>40.000đ</i>
+            </div>
+            <div class="body-content__special-menu-grid-item">
+                <img src="coffee_images/peach-tea.png" alt="" class="body-content__item-image--resize">
+                <br><br>
+                Trà đào
+                <br>
+                <i>38.000đ</i>
+            </div>
+            <div class="body-content__special-menu-grid-item">
+                <img src="coffee_images/latte.png" alt="" class="body-content__item-image--resize">
+                <br><br>
+                Latte
+                <br>
+                <i>43.000đ</i>
+            </div>
+            <div class="body-content__special-menu-grid-item">
+                <img src="coffee_images/tiramisu.png" alt="" class="body-content__item-image--resize">
+                <br><br>
+                Tiramisu
+                <br>
+                <i>35.000đ</i>
+            </div>
+        </div>
+
+        <br>
+
+        <div style="text-align: center; font-size: 25px; color: #fba700;">
+            <b>COFFEE NEWS</b>
+        </div>
+
+        <br>
+
+        <div class="body-content__news-grid-container">
+            <div class="body-content__news-grid-item">
+                <img src="coffee_news_images/news_1.png" alt="" class="body-content__news-image--adjust">
+                <i>11-11-2024</i>
+                <br><br>
+                <div style="font-size: 20px;">
+                    <b>KHÁM PHÁ HƯƠNG VỊ MỚI - "CÀ PHÊ KẸO MÚT" ĐẶC BIỆT</b>
+                </div>
+                <br>
+                <div style="font-size: 15px; text-align: justify;">
+                    Trong tháng này, chúng tôi tự hào giới thiệu hương vị cà phê độc đáo mới mang tên "Cà Phê Kẹo Mút".
+                    Sự kết
+                    hợp hoàn hảo giữa vị đắng nhẹ của hạt cà phê nguyên chất và hương thơm dịu ngọt của kẹo mút mang đến
+                    trải nghiệm đầy thú vị cho những tín đồ cà phê yêu thích sự mới lạ.
+                </div>
+            </div>
+            <div class="body-content__news-grid-item">
+                <img src="coffee_news_images/news_2.jpg" alt="" class="body-content__news-image--adjust">
+                <i>12-11-2024</i>
+                <br><br>
+                <div style="font-size: 20px;">
+                    <b>THÁNG 11 ƯU ĐÃI - GIẢM 20% TẤT CẢ HÓA ĐƠN</b>
+                </div>
+                <br>
+                <div style="font-size: 15px; text-align: justify;">
+                    Nhân dịp tháng 11, shop triển khai chương trình ưu đãi 20% cho mọi đơn hàng.
+                    Đây là lời cảm ơn đặc biệt mà chúng tôi muốn
+                    gửi đến những khách hàng đã đến ủng hộ cửa hàng. Chương trình
+                    chỉ kéo dài đến hết tháng, đừng bỏ lỡ cơ hội trải nghiệm!
+                </div>
+            </div>
+            <div class="body-content__news-grid-item">
+                <img src="coffee_news_images/news_3.jpg" alt="" class="body-content__news-image--adjust">
+                <i>13-11-2024</i>
+                <br><br>
+                <div style="font-size: 20px;">
+                    <b>"TRẢI NGHIỆM WORKSHOP PHA CHẾ TẠI NHÀ" VÀO NGÀY 15-11</b>
+                </div>
+                <br>
+                <div style="font-size: 15px; text-align: justify;">
+                    Bạn yêu thích cà phê và muốn tự tay pha chế những tách cà phê thơm ngon tại nhà? Hãy tham gia buổi
+                    workshop đặc biệt do quán tổ chức vào thứ Bảy tuần này! Bạn sẽ được học từ những kỹ thuật
+                    pha cà phê cơ bản đến các mẹo để tạo ra ly cà phê hoàn hảo từ những chuyên gia của chúng tôi.
+                    Đăng ký ngay vì số lượng chỗ ngồi có hạn!
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="footer__main-content">
+            <br>
+            <div class="footer__grid-container">
+                <div class="footer__grid-item">
+                    <b>Giới thiệu</b>
+                    <div style="font-size: 13px;">
+                        <br><i>AboutUs</i> <br>
+                        <br><i>Sản phẩm</i> <br>
+                        <br><i>Cửa hàng</i> <br>
+                        <br><i>Tuyển dụng</i>
+                    </div>
+                </div>
+                <div class="footer__grid-item">
+                    <b>Điều khoản</b>
+                    <div style="font-size: 13px;">
+                        <br><i>Điều khoản sử dụng</i> <br>
+                        <br><i>Chính sách bảo mật</i>
+                    </div>
+                </div>
+                <div class="footer__grid-item">
+                    <b>Đặt hàng</b>
+                    <div style="font-size: 13px;">
+                        <br><i class="fas fa-phone"></i> &nbsp;<i>Phone: 0123456789</i> <br>
+                        <br><i class="fab fa-facebook-f"></i> &nbsp;&nbsp;&nbsp;<i>Nhóm 14</i><br>
+                        <br>
+                    </div>
+                </div>
+                <div class="footer__grid-item">
+
+                </div>
+            </div>
+        </div>
+        <div class="popup-overlay" id="popupOverlay">
+            <div class="popup-content">
+                <div>
+                    <img src="logo/logo.png" alt="" id="popup-logo--resize">
+                    <button class="close-btn" onclick="closePopup()">×</button>
+                </div>
+                <div>
+                    <p><b>Chào mừng đến với Coffee Shop!!!</b></p>
+                </div>
+                <form>
+                    <input type="text" placeholder="Nhập số điện thoại" class="popup-phone-input--adjust">
+                    <br><br>
+                    <button type="button" id="popup-submit-button--adjust" onclick="loggedIn()">
+                        <b>Đăng nhập</b></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="javascript/image-slide.js"></script>
+    <script src="javascript/login-popup.js"></script>
+</body>
+
+</html>
