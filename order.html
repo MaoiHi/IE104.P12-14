@@ -110,8 +110,74 @@
         <b>Xác nhận đơn hàng</b>
     </div>
 
-    <div>
+    <div class="container">
+        <div class="left-panel">
+            
+            <div class="section-title-container">
+                <div class="section-title">Giao hàng</div>
+                <button class="change-method-button">Đổi phương thức</button>
+            </div>
         
+            <hr style="background-color: red; width: 100px; height: 2px; float: left;"><br><br>
+            <div class="input-group">
+                <div class="label-with-icon">
+                    <img  src="/images/Delivery2.png" alt="Delivery Icon">
+                    <label>Ký túc xá Khu B - Đại học Quốc gia TP.HCM</label>
+                    
+                </div>
+                <p>Ký túc xá Khu B - Đại học Quốc gia TP.HCM, Đ. Mạc Đĩnh Chi, Khu phố Tân Hòa, Dĩ An, Bình Dương, Việt Nam</p>
+            </div>
+            
+            <div class="input-group">
+                <input type="text" placeholder="Nhập tên người nhận">
+            </div>
+            <div class="input-group">
+                <input type="text" placeholder="Số điện thoại">
+            </div>
+            <div class="input-group">
+                <input type="text" placeholder="Nhập hướng dẫn nếu có">
+            </div>
+            <div class="section-title">Phương thức thanh toán</div>
+            <div class="payment-method">
+                <label><input type="radio" name="payment" value="cash"> Tiền mặt</label>
+                <label><input type="radio" name="payment" value="momo"> MoMo</label>
+            </div>
+        </div>
+
+        <div class="right-panel">
+            <div class="section-title">Các món đã chọn</div>
+            <div>
+                <p>1 x Trà Xanh Latte</p>
+                <p>55.000đ</p>
+            </div>
+            <div>
+                <p>Nhỏ</p>
+            </div>
+            <div>
+                <p>Kem Phô Mai Macchiato</p>
+            </div>
+            <div class="order-summary">
+                <div>
+                    <p>Phí giao hàng</p>
+                    <p>18.000đ</p>
+                </div>
+                <div>
+                    <p>Bạn có mã khuyến mãi trong mục Ưu đãi</p>
+                    <p>0đ</p>            
+                </div>
+
+                <button id="km">Khuyến mãi</button>
+                
+
+                <div class="order-total">
+                    <p>Tổng cộng</p>
+                    <p>73.000đ</p>
+                </div>
+            </div>
+            <div class="order-button">
+                <button>Đặt hàng</button>
+            </div>
+        </div>
     </div>
 
 </body>
