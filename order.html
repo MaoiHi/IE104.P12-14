@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/order.css"> 
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/order.css">
+    <link rel="stylesheet" href="css/discount-popup.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -13,6 +15,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
     <div class="header__flex-container">
 
@@ -22,10 +25,10 @@
 
         <div class="header__flex-navigation-col header__grid-container">
             <div class="header__grid-item">
-                Cà phê
+                <b>Cà phê</b>
             </div>
             <div class="header__grid-item header__menu">
-                Menu
+                <b>Menu</b>
                 <div class="header__menu-content">
                     <div class="header__menu-content-grid-container">
                         <div style="list-style-type: none;" class="header__menu-content-grid-item">
@@ -80,30 +83,27 @@
                 </div>
             </div>
             <div class="header__grid-item" style="width: 150px;">
-                Cảm hứng CloudFee
+                <b>Cảm hứng CloudFee</b>
             </div>
             <div class="header__grid-item">
-                Cửa hàng
+                <b>Cửa hàng</b>
             </div>
             <div class="header__grid-item">
-                Tuyển dụng
+                <b>Tuyển dụng</b>
             </div>
         </div>
         <div class="header__flex-login-col">
-            <div class="header__login-box">
+            <div>
                 <span class="icon-circle">
                     <i class="fas fa-user"></i>
                 </span>
-                &nbsp;Đăng nhập
-            </div>
+                &nbsp;<b>Khách hàng</b>&nbsp;
 
-            <div class="header__login-box">
                 <span class="icon-circle">
                     <i class="fa-solid fa-cart-shopping"></i>
                 </span>
-                &nbsp;Giỏ hàng
+                &nbsp;<b>Giỏ hàng</b>
             </div>
-
         </div>
     </div>
 
@@ -113,27 +113,28 @@
 
     <div class="container">
         <div class="left-panel">
-            
+
             <div class="section-title-container">
                 <div class="section-title">Giao hàng</div>
                 <button class="change-method-button">Đổi phương thức</button>
             </div>
-        
+
             <hr style="background-color: red; width: 100px; height: 2px; float: left;"><br><br>
             <div class="input-group">
                 <div class="label-with-icon">
-                    <img  src="https://minio.thecoffeehouse.com/images/tch-web-order/Delivery2.png" alt="Delivery Icon">
+                    <img src="https://minio.thecoffeehouse.com/images/tch-web-order/Delivery2.png" alt="Delivery Icon">
                     <div class="delivery">
                         <p><span><b>Ký túc xá Khu B - Đại học Quốc gia TP.HCM</b></span><br>
-                            Ký túc xá Khu B - Đại học Quốc gia TP.HCM, Đ. Mạc Đĩnh Chi, Khu phố Tân Hòa, Dĩ An, Bình Dương, Việt Nam
+                            Ký túc xá Khu B - Đại học Quốc gia TP.HCM, Đ. Mạc Đĩnh Chi, Khu phố Tân Hòa, Dĩ An, Bình
+                            Dương, Việt Nam
                         </p>
                     </div>
-                    
-                        
+
+
                 </div>
-              
+
             </div>
-            
+
             <div class="input-group">
                 <input type="text" placeholder="Nhập tên người nhận">
             </div>
@@ -151,16 +152,18 @@
                 <div class="icon-payment-method">
                     <label>
                         <input type="radio" name="payment" value="cash" class="custom-radio">
-                        <img src="	https://minio.thecoffeehouse.com/image/tchmobileapp/1000_photo_2021-04-06_11-17-08.jpg" alt="Cash Icon" class="payment-icon">
+                        <img src="	https://minio.thecoffeehouse.com/image/tchmobileapp/1000_photo_2021-04-06_11-17-08.jpg"
+                            alt="Cash Icon" class="payment-icon">
                         Tiền mặt
                     </label>
                 </div>
-                
-                
+
+
                 <div class="icon-payment-method">
                     <label>
                         <input type="radio" name="payment" value="cash" class="custom-radio">
-                        <img src="	https://minio.thecoffeehouse.com/image/tchmobileapp/386_ic_momo@3x.png" alt="Cash Icon" class="payment-icon">
+                        <img src="	https://minio.thecoffeehouse.com/image/tchmobileapp/386_ic_momo@3x.png"
+                            alt="Cash Icon" class="payment-icon">
                         Momo
                     </label>
                 </div>
@@ -168,7 +171,8 @@
                 <div class="icon-payment-method">
                     <label>
                         <input type="radio" name="payment" value="cash" class="custom-radio">
-                        <img src="https://minio.thecoffeehouse.com/image/tchmobileapp/388_ic_zalo@3x.png" alt="Cash Icon" class="payment-icon">
+                        <img src="https://minio.thecoffeehouse.com/image/tchmobileapp/388_ic_zalo@3x.png"
+                            alt="Cash Icon" class="payment-icon">
                         ZaloPay
                     </label>
                 </div>
@@ -176,7 +180,8 @@
                 <div class="icon-payment-method">
                     <label>
                         <input type="radio" name="payment" value="cash" class="custom-radio">
-                        <img src="https://minio.thecoffeehouse.com/image/tchmobileapp/1120_1119_ShopeePay-Horizontal2_O.png" alt="Cash Icon" class="payment-icon">
+                        <img src="https://minio.thecoffeehouse.com/image/tchmobileapp/1120_1119_ShopeePay-Horizontal2_O.png"
+                            alt="Cash Icon" class="payment-icon">
                         ShopeePay
                     </label>
                 </div>
@@ -184,7 +189,8 @@
                 <div class="icon-payment-method">
                     <label>
                         <input type="radio" name="payment" value="cash" class="custom-radio">
-                        <img src="https://minio.thecoffeehouse.com/image/tchmobileapp/385_ic_atm@3x.png" alt="Cash Icon" class="payment-icon">
+                        <img src="https://minio.thecoffeehouse.com/image/tchmobileapp/385_ic_atm@3x.png" alt="Cash Icon"
+                            class="payment-icon">
                         Thẻ ngân hàng
                     </label>
                 </div>
@@ -192,7 +198,9 @@
 
             <div class="term">
                 <input type="checkbox" class="mdCheckbox">
-                <p>Đồng ý với các <span style="color: chocolate;">điều khoản và điều kiện</span> mua hàng của The Coffee Delight</p>
+                <p>Đồng ý với các <span style="color: chocolate;"><u>điều khoản và điều kiện</u></span> mua hàng của The
+                    Coffee
+                    Delight</p>
             </div>
         </div>
 
@@ -212,53 +220,101 @@
                     <p>Kem Phô Mai Macchiato</p>
                 </div>
             </div>
-            
-            <br>  <br>
+
+            <br> <br>
             <div class="order-total">
                 <p>Tổng cộng</p>
             </div>
             <hr style="background-color: red; width: 50px; height: 2px; float: left;"><br>
-            
+
             <div class="order-summary">
                 <div>
                     <p>Thành tiền</p>
                     <p>55.000đ</p>
-                </div>            
-            </div>
-
-            <div class="order-summary">
+                </div>
                 <div>
                     <p>Phí giao hàng</p>
                     <p>18.000đ</p>
                 </div>
                 <div>
-                    <p>Bạn có mã khuyến mãi trong mục Ưu đãi</p>
-                    <p>0đ</p>            
+                    <p>Khuyến mãi</p>
+                    <span id="discount-text">
+                        <p>0%</p>
+                    </span>
                 </div>
             </div>
 
-                <div class="order-summary">
-                    <button id="km">Khuyến mãi</button>
-                </div>
+            <div class="order-summary" onclick="openPopup()">
+                <button id="km"><b>Mã giảm giá</b></button>
+            </div>
 
-                <div class="total-box">
-                    <div class="total-info">
-                        <p>Thành tiền</p>
-                        <p class="price">73.000đ</p>
-                    </div>
-                    <button class="order-button">Đặt hàng</button>
+            <div class="total-box">
+                <div class="total-info">
+                    <p>Thành tiền</p>
+                    <p class="price">xx.xxxđ</p>
                 </div>
-                <div>
-                    
-                    <button class="delete-order-btn"><i class="fa-solid fa-trash"></i> Xóa đơn hàng</button>
-                </div>
-                
+                <button class="order-button" onclick="showText()">Đặt hàng</button>
+            </div>
+            <div id="text">Đặt hàng thành công!!!</div>
 
-                
+            <div>
+                <button class="delete-order-btn"><i class="fa-solid fa-trash"></i> Xóa đơn hàng</button>
+            </div>
         </div>
+        <div class="popup-overlay" id="popupOverlay">
+            <div class="popup-content">
+                <div>
+                    <span style="font-size: 22px;"><b>Khuyến mãi</b></span>
+                    <button class="close-btn" onclick="closePopup()">×</button>
+                </div>
+                <br><br>
+                <div>
+                    <input type="text" placeholder="Nhập mã giảm giá" class="input-discount">
+                </div>
+                <br>
+                <div>
+                    <hr style="background-color: orange; width: 200px; height: 1px;">
+                </div>
+                <br>
+                <div class="discount-grid-container discount-box">
+                    <div class="discount-grid-item">
+                        <img src="discount_images/discount-10.png" alt="" class="discount-image--adjust">
+                    </div>
+                    <div class="discount-grid-item">
+                        Giảm 10% tổng giá đơn hàng
+                        <button type="button" class="submit-discount" data-discount="10" onclick="closePopup()">
+                            <b>Áp dụng</b></button>
+                    </div>
+                </div>
+                <br>
+                <div class="discount-grid-container discount-box">
+                    <div class="discount-grid-item">
+                        <img src="discount_images/discount-30.png" alt="" class="discount-image--adjust">
+                    </div>
+                    <div class="discount-grid-item">
+                        Giảm 30% tổng giá đơn hàng
+                        <button type="button" class="submit-discount" data-discount="30" onclick="closePopup()">
+                            <b>Áp dụng</b></button>
+                    </div>
+                </div>
+                <br>
+                <div class="discount-grid-container discount-box">
+                    <div class="discount-grid-item">
+                        <img src="discount_images/discount-50.png" alt="" class="discount-image--adjust">
+                    </div>
+                    <div class="discount-grid-item">
+                        Giảm 50% tổng giá đơn hàng
+                        <button type="button" class="submit-discount" data-discount="50" onclick="closePopup()">
+                            <b>Áp dụng</b></button>
+                    </div>
+                </div>
 
-        
+                <br>
+            </div>
+        </div>
     </div>
-
+    <script src="javascript/discount-popup.js"></script>
+    <script src="javascript/submit-order.js"></script>
 </body>
+
 </html>

@@ -16,7 +16,7 @@
     margin-right: 100px;
 }
 .right-panel {
-    height: 650px;
+    height: 670px;
     width: 400px;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -75,7 +75,7 @@
 
 .order-summary {
     margin-top: 20px;
-    font-size: 12px;
+    font-size: 14px;
 }
 .order-summary div {
     display: flex;
@@ -85,7 +85,7 @@
 
 .order-food {
     margin-top: 20px;
-    font-size: 12px;
+    font-size: 14px;
 }
 .order-food div {
     display: flex;
@@ -137,8 +137,18 @@ input {
 
 #km {
     color: #d35400;
-    border: none;
+    border: 2px solid #d35400;
+    border-radius: 10px;
     background-color:  #F5E9DA;
+    cursor: pointer;
+    width: 130px;
+    height: 60px;
+    font-size: 15px;
+}
+
+#km:hover{
+    color: #ff9800;
+    border: 2px solid #ff9800;
 }
 
 .label-with-icon {
@@ -218,7 +228,7 @@ input {
 }
 
 .mdCheckbox {
-    width: 24px; /* Kích thước checkbox */
+    width: 28px; /* Kích thước checkbox */
     height: 24px;
     cursor: pointer;
     appearance: none; /* Loại bỏ kiểu mặc định */
@@ -253,7 +263,7 @@ input {
     display: block; /* Để nút nằm thành hàng riêng */
     width: 100%; /* Chiều rộng bằng khung chứa */
     padding: 10px; /* Khoảng cách trong nút */
-    margin-top: 70px; /* Khoảng cách giữa nút và nội dung phía trên */
+    margin-top: 20px; /* Khoảng cách giữa nút và nội dung phía trên */
     background-color: #F5E9DA; /* Màu nền đỏ */
     color: chocolate; /* Màu chữ trắng */
     border: none; /* Xóa viền */
@@ -261,4 +271,19 @@ input {
     font-size: 16px; /* Kích thước chữ */
     cursor: pointer; /* Con trỏ trỏ tay khi hover */
     text-align: center; /* Căn giữa chữ */
+}
+
+ #text {
+    opacity: 0; 
+    transform: translateY(-10px); 
+    transition: opacity 1s ease, transform 1s ease;
+    font-size: 18px;
+    color: #ff0000;
+    text-align: center;
+    margin-top: 15px;
+}
+
+#text.show {
+    opacity: 1;
+    transform: translateY(0); 
 }
