@@ -1,0 +1,157 @@
+    .cloudfee {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+    }
+
+    .cloudfee__social {
+        position: fixed;
+        right: 100px;
+        bottom: 50px;
+        z-index: 99;
+    }
+
+    .cloudfee__social a,
+    .cloudfee__social>div {
+        display: block;
+        width: 40px;
+        height: 40px;
+        line-height: 36px;
+        background: #fff;
+        border-radius: 50%;
+        text-align: center;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+        margin-bottom: 16px;
+        cursor: pointer;
+    }
+
+    .cloudfee__social a.zalo-share-button img,
+    .cloudfee__social>div.zalo-share-button img {
+        max-height: 24px;
+    }
+
+    .cloudfee__social a img,
+    .cloudfee__social>div img {
+        max-height: 20px;
+    }
+
+    .cloudfee__social a.disabled,
+    .cloudfee__social>div.disabled {
+        pointer-events: none;
+        opacity: 0.7;
+    }
+
+    .cloudfee__social .mini-copy {
+        margin: 0;
+    }
+
+    .cloudfee__social .mini-copy.copied {
+        background: green;
+    }
+
+    .cloudfee__social .mini-copy.copied img {
+        filter: invert(1);
+    }
+
+    .cloudfee__banner-top {
+        position: relative;
+    }
+
+    .cloudfee__image-top--adjust {
+        width: 100%;
+        height: auto;
+        max-height: 100%;
+        object-fit: cover;
+    }
+
+    .cloudfee__bg {
+        background: #45392c url("cloudfee_images/_cloudfee_bg.jpg") top center/cover no-repeat;
+        color: #fff;
+    }
+
+
+
+    .cloudfee__bg__top-desc {
+        padding: 40px 16px;
+        max-width: 1050px;
+        margin: 0 auto;
+        font-size: 30px;
+        line-height: 1.22;
+        font-weight: 500;
+        text-align: center;
+    }
+
+
+    .cloudfee__bg__block {
+        margin-bottom: 8px;
+    }
+
+    .cloudfee__bg__block__container {
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .cloudfee__bg__block__container--adjust {
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        display: flex;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .cloudfee__bg__block__container__info-block {
+        flex: 0 0 49%;
+        width: 49%;
+    }
+
+    .cloudfee__bg__block__container__info-block__right {
+        flex: 0 0 49%;
+        width: 49%;
+        order: 2;
+    }
+
+    .cloudfee__bg__block__container__info-block--subtitle {
+        color: #FEBF3E;
+        font-size: 24px;
+        font-family: 'Baron';
+        line-height: 1;
+    }
+
+    .cloudfee__bg__block__container__info-block--main-title {
+        margin-bottom: 8px;
+        font-family: 'Glad';
+        color: #FEBF3E;
+        font-size: 80px;
+        line-height: 1.05;
+    }
+
+    .cloudfee__bg__block__container__info-block--main-title2 {
+        margin-bottom: 8px;
+        font-family: 'Hara';
+        color: #FEBF3E;
+        font-size: 80px;
+        line-height: 1.1;
+    }
+
+    .cloudfee__bg__block__container__info-block--title2 {
+        display: flex;
+        align-items: center;
+        margin-right: 14px;
+    }
+
+    .cloudfee__bg__block__container__info-block__cloud-desc {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 16px;
+    }
+
+    .cloudfee__bg__block__container__info-block__img-block {
+        flex: 0 0 49%;
+        width: 49%;
+    }
+
+    .cloudfee__bg__block__container__info-block__img-block img {
+        width: 100%;
+    }
