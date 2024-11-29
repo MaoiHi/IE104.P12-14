@@ -164,7 +164,7 @@ input {
 
 
 .total-box {
-    margin-top: 70px;
+    margin-top: 50px;
     text-align: center;
     display: flex;
     justify-content: space-between;
@@ -286,4 +286,17 @@ input {
 #text.show {
     opacity: 1;
     transform: translateY(0); 
+}
+
+/* Styling for the terms link */
+.terms-link {
+    color: #f58220; /* Màu cam cho liên kết */
+    text-decoration: none; /* Bỏ gạch chân mặc định */
+    transition: text-decoration 0.3s, color 0.3s; /* Hiệu ứng mượt khi thay đổi */
+}
+
+/* Hover effect: Gạch chân và đổi màu */
+.terms-link:hover {
+    text-decoration: underline; /* Gạch chân khi di chuột */
+    color: #d15e00; /* Đổi màu cam đậm hơn */
 }

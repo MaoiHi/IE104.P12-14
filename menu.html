@@ -4,14 +4,929 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <title>Menu</title>
 </head>
 <body>
+    
     <div class="header__flex-container">
-        <div>
-            
+
+        <div class="header__flex-logo-col">
+            <img src="logo/logo.png" alt="" id="header__logo--resize">
         </div>
 
+        <div class="header__flex-navigation-col header__grid-container">
+            <div class="header__grid-item">
+                <b>Cà phê</b>
+            </div>
+            <div class="header__grid-item header__menu">
+                <b>Menu</b>
+                <div class="header__menu-content">
+                    <div class="header__menu-content-grid-container">
+                        <div style="list-style-type: none;" class="header__menu-content-grid-item">
+                            <br>
+                            <div style="font-size: 20px;">
+                                <u><b><i>Coffee</i></b></u>
+                            </div>
+                            <div style="display: flex">
+                                <div style="flex: 1; font-size: 15px;">
+                                    <br>Cà phê đen <br>
+                                    <br>Cà phê sữa <br>
+                                    <br>Bạc xỉu <br>
+                                    <br>Americano <br>
+                                </div>
+                                <div style="flex: 1; font-size: 15px;">
+                                    <br>Cappuccino <br>
+                                    <br>Espresso <br>
+                                    <br>Latte <br>
+                                    <br>Macchiato <br>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="list-style-type: none;" class="header__menu-content-grid-item">
+                            <br>
+                            <div style="font-size: 20px;">
+                                <u><b><i>Tea</i></b></u>
+                            </div>
+                            <div style="display: flex">
+                                <div style="flex: 1; font-size: 15px;">
+                                    <br>Trà táo <br>
+                                    <br>Trà chanh <br>
+                                    <br>Trà đào <br>
+                                    <br>Trà sữa <br>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="list-style-type: none;" class="header__menu-content-grid-item">
+                            <br>
+                            <div style="font-size: 20px;">
+                                <u><b><i>Others</i></b></u>
+                            </div>
+                            <div style="display: flex">
+                                <div style="flex: 1; font-size: 15px;">
+                                    <br>Đá xay <br>
+                                    <br>Đá xay Matcha <br>
+                                    <br>Mochi <br>
+                                    <br>Tiramisu <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__grid-item" style="width: 150px;">
+                <b>Cảm hứng CloudFee</b>
+            </div>
+            <div class="header__grid-item">
+                <b>Cửa hàng</b>
+            </div>
+            <div class="header__grid-item">
+                <b>Tuyển dụng</b>
+            </div>
+        </div>
+        <div class="header__flex-login-col">
+            <div>
+                <span class="icon-circle">
+                    <i class="fas fa-user"></i>
+                </span>
+                &nbsp;<b>Khách hàng</b>&nbsp;
+                <div class="cart-icon-container">
+                <span class="icon-circle">
+                  <a href="order.html">
+                    <i class="fa-solid fa-cart-shopping">  </i>
+                  </a>
+                    
+                </span>
+                &nbsp;<b>Giỏ hàng</b>
+                <span class="cart-count">0</span>
+              </div>
+            </div>
+        </div>
     </div>
+
+
+    <div class="body-content__image-slider">
+        <div class="body-content__image-slide active">
+            <img src="images/ads_1.png" alt="" class="body-content__image-slider--resize">
+        </div>
+        <div class="body-content__image-slide">
+            <img src="images/ads_3.jpg" alt="" class="body-content__image-slider--resize">
+        </div>
+        <div class="body-content__image-slide">
+            <img src="images/ads_4.jpg" alt="" class="body-content__image-slider--resize">
+        </div>
+        <div class="body-content__image-slide">
+            <img src="images/ads_5.jpg" alt="" class="body-content__image-slider--resize">
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>🏆 Sản phẩm từ Nhà</h1>
+        <!-- Danh mục -->
+        <div class="categories">
+
+            <div class="category" data-catagory="monmoi">
+              <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1729684633_11zon-cropped-2.png" alt="Món Mới Phải Thử">
+              <p>Món Mới Phải<br>Thử</p>
+            </div>
+
+            <div class="category" data-catagory="traicayxay">
+              <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1729740834_traicayxay.png" alt="Trái cây xây">
+              <p>Trái cây xay<br>0*C</p>
+            </div>
+
+            <div class="category" data-catagory="tratraicay">
+              <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1729740899_tratraicay.png" alt="Trà Trái Cây HiTea">
+              <p>Trà Trái Cây<br>HiTea</p>
+            </div>
+
+            <div class="category" data-catagory="trasua"> 
+              <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1729740839_trasua.png" alt="Trà Sữa">
+              <p>Trà Sữa</p>
+            </div>
+
+            <div class="category" data-catagory="traxanh">
+              <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1729740907_traxanh.png" alt="Trà Xanh - Chocolate">
+              <p>Trà Xanh -<br>Chocolate</p>
+            </div>
+
+            <div class="category" data-catagory="daxay">
+              <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1729740507_frosty.png" alt="Đá Xay Frosty">
+              <p>Đá Xay<br>Frosty</p>
+            </div>
+
+            <div class="category" data-catagory="caphe">
+              <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1729740485_caphe.png" alt="Cà Phê">
+              <p>Cà Phê</p>
+            </div>
+
+            <div class="category" data-catagory="banhman">
+              <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1729740472_banhman.png" alt="Bánh Mặn">
+              <p>Bánh Mặn</p>
+            </div>
+
+            <div class="category" data-catagory="monnong">
+              <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1729740819_monnong.png" alt="Món Nóng">
+              <p>Món Nóng</p>
+            </div>  
+          </div>
+
+          <div class="categories">
+            <div class="category" data-catagory="banhngot">
+                <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1729740479_banhngot.png" alt="Món Nóng">
+              <p>Bánh ngọt</p>
+            </div>
+
+            <div class="category" data-catagory="Topping">
+                <img class="icon" src="	https://minio.thecoffeehouse.com/image/admin/1729740827_topping.png" alt="Món Nóng">
+              <p>Topping</p>
+            </div>
+
+            <div class="category" data-catagory="caphetra">
+                <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1729740493_cpg.png" alt="Món Nóng">
+              <p>Cà Phê - Trà <br>Đóng Gói</p>
+            </div>
+          </div>
+          
+    
+        <!-- Danh sách sản phẩm -->
+        <div class="products">
+          <!-- Các món phải thử -->
+          <div class="product" data-catagory="monmoi">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1732197236_caphe_400x400.jpg" alt="Sản phẩm">
+            <h3>Cà Phê Sữa Hạnh Nhân Kem Cheese</h3>
+            <div class="price-order">
+                <p>59.000đ</p>
+                <button class="add-button" data-product-id="1">+</button>
+            </div>           
+          </div>
+
+          <div class="product" data-catagory="monmoi">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1732197215_traxanh_400x400.jpg" alt="Sản phẩm">
+            <h3>Trà Xanh Latte Sữa Hạnh Nhân</h3>
+            <div class="price-order">
+                <p>59.000đ</p>
+                <button class="add-button" data-product-id="2">+</button>
+            </div>     
+          </div>
+
+          <div class="product" data-catagory="monmoi">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1732197222_traxanhnong_400x400.jpg" alt="Sản phẩm">
+            <h3>Trà Xanh Latte Sữa Hạnh Nhân (Nóng)</h3>
+            <div class="price-order">
+                <p>55.000đ</p>
+                <button class="add-button" data-product-id="3">+</button>
+            </div>  
+          </div>
+
+          <div class="product" data-catagory="monmoi">
+            <img class="icon" src="	https://minio.thecoffeehouse.com/image/admin/1732197202_trasua_400x400.jpg" alt="Sản phẩm">
+            <h3>Oolong Sữa Hạnh Nhân Trân Châu Hoàng Kim</h3>
+            <div class="price-order">
+                <p>59.000đ</p>
+                <button class="add-button" data-product-id="4">+</button>
+            </div>     
+          </div>
+
+          <div class="product" data-catagory="monmoi">
+            <img class="icon" src="	https://minio.thecoffeehouse.com/image/admin/1732197208_trasuanong_400x400.jpg" alt="Sản phẩm">
+            <h3>Oolong Sữa Hạnh Nhân (Nóng)</h3>
+            <div class="price-order">
+                <p>55.000đ</p>
+                <button class="add-button" data-product-id="5">+</button>
+            </div>
+            
+          </div>
+
+          <div class="product" data-catagory="monmoi">
+            <img class="icon" src="	https://minio.thecoffeehouse.com/image/admin/1732197230_socola_400x400.jpg" alt="Sản phẩm">
+            <h3>Choco Sữa Hạnh Nhân Kem Cheese</h3>
+            <div class="price-order">
+                <p>59.000đ</p>
+                <button class="add-button" data-product-id="6">+</button>
+            </div> 
+          </div>
+          
+          <!--Trái cây xây-->
+          <div class="product" data-catagory="traicayxay">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1719929441_bo-sua-pmt_400x400.jpg" alt="Trái cây xay">
+            <h3>Bơ Sữa Phô Mai</h3>
+            <div class="price-order">
+                <p>55.000đ</p>
+                <button class="add-button" data-product-id="7">+</button>
+            </div>           
+          </div>
+          
+          <div class="product" data-catagory="traicayxay">
+            <img class="icon" src="	https://minio.thecoffeehouse.com/image/admin/1717387639_dau-pho-mai_400x400.jpg" alt="Trái cây xay">
+            <h3>Dâu Phô Mai</h3>
+            <div class="price-order">
+                <p>55.000đ</p>
+                <button class="add-button" data-product-id="8">+</button>
+            </div>     
+          </div>
+
+          <div class="product" data-catagory="traicayxay">
+            <img class="icon" src="	https://minio.thecoffeehouse.com/image/admin/1717387385_man-pho-mai_400x400.jpg" alt="Trái cây xay">
+            <h3>Mận Phô Mai</h3>
+            <div class="price-order">
+                <p>55.000đ</p>
+                <button class="add-button" data-product-id="9">+</button>
+            </div>  
+          </div>
+
+          <div class="product" data-catagory="traicayxay">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1717387907_man-cau-pho-mai_400x400.jpg" alt="Trái cây xay">
+            <h3>Mãng Cầu Phô Mai</h3>
+            <div class="price-order">
+                <p>55.000đ</p>
+                <button class="add-button" data-product-id="10">+</button>
+            </div>     
+          </div>
+
+          <div class="product" data-catagory="traicayxay">
+            <img class="icon" src="	https://minio.thecoffeehouse.com/image/admin/1717387602_nho-pho-mai_400x400.jpg" alt="Sản phẩm">
+            <h3>Nho Phô Mai</h3>
+            <div class="price-order">
+                <p>55.000đ</p>
+                <button class="add-button" data-product-id="11">+</button>
+            </div>
+          </div>
+
+
+          <!--Trà trái cây HiTea-->
+          <div class="product" data-catagory="tratraicay">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/tdcs-nong_288997_400x400.jpg" alt="Sản phẩm">
+            <h3>Trà Đào Cam Sả - Nóng</h3>
+            <div class="price-order">
+                <p>59.000đ</p>
+                <button class="add-button" data-product-id="12">+</button>
+            </div>           
+          </div>
+          
+          <div class="product" data-catagory="tratraicay">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/tra-sen-nong_025153_400x400.jpg" alt="Sản phẩm">
+            <h3>Oolong Tứ Qúy Sen (Nóng)</h3>
+            <div class="price-order">
+                <p>59.000đ</p>
+                <button class="add-button" data-product-id="13">+</button>
+            </div>     
+          </div>
+
+          <div class="product" data-catagory="tratraicay">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1731662581_oolongdau_400x400.jpg" alt="Sản phẩm">
+            <h3>Oolong Tứ Qúy Dâu Trân Châu</h3>
+            <div class="price-order">
+                <p>49.000đ</p>
+                <button class="add-button" data-product-id="14">+</button>
+            </div>  
+          </div>
+
+          <div class="product" data-catagory="tratraicay">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1669736819_tra-dao-cam-sa-da_400x400.png" alt="Sản phẩm">
+            <h3>Trà Đào Cam Sả - Đá</h3>
+            <div class="price-order">
+                <p>49.000đ</p>
+                <button class="add-button" data-product-id="15">+</button>
+            </div>     
+          </div>
+
+          <div class="product" data-catagory="tratraicay">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1669736859_hi-tea-yuzu-tran-chau_400x400.png" alt="Sản phẩm">
+            <h3>Hi-Tea Yuzu Trân Châu</h3>
+            <div class="price-order">
+                <p>59.000đ</p>
+                <button class="add-button" data-product-id="16">+</button>
+            </div>
+          </div>
+
+
+          <!--Trà sữa-->
+          <div class="product" data-catagory="trasua">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/oolong-nuong-nong_948581_400x400.jpg" alt="Sản phẩm">
+            <h3>Trà Sữa Oolong Nướng (Nóng)</h3>
+            <div class="price-order">
+                <p>55.000đ</p>
+                <button class="add-button" data-product-id="17">+</button>
+            </div>           
+          </div>
+          
+          <div class="product" data-catagory="trasua">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/hong-tra-sua-nong_941687_400x400.jpg" alt="Sản phẩm">
+            <h3>Hông Trà Sữa Nóng</h3>
+            <div class="price-order">
+                <p>55.000đ</p>
+                <button class="add-button" data-product-id="18">+</button>
+            </div>     
+          </div>
+
+          <div class="product" data-catagory="trasua">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1723623433_tra-sua-bo_400x400.jpg" alt="Sản phẩm">
+            <h3>Trà Sữa Oolong Tứ Qúy Bơ</h3>
+            <div class="price-order">
+                <p>59.000đ</p>
+                <button class="add-button" data-product-id="19">+</button>
+            </div>  
+          </div>
+
+          <div class="product" data-catagory="trasua">
+            <img class="icon" src="	https://minio.thecoffeehouse.com/image/admin/1669736878_tra-sua-oolong-nuong-tran-chau_400x400.png" alt="Sản phẩm">
+            <h3>Trà Sữa Oolong Nướng Trân Châu</h3>
+            <div class="price-order">
+                <p>55.000đ</p>
+                <button class="add-button" data-product-id="20">+</button>
+            </div>     
+          </div>
+
+          <div class="product" data-catagory="trasua">
+            <img class="icon" src="	https://minio.thecoffeehouse.com/image/admin/1719911220_oolongtuquy-suongsao_400x400.jpg" alt="Sản phẩm">
+            <h3>Trà Sữa Oolong Tứ Qúy Sương Sáo</h3>
+            <div class="price-order">
+                <p>55.000đ</p>
+                <button class="add-button" data-product-id="21">+</button>
+            </div>
+          </div>
+
+
+          <!--Trà xanh-->
+          <div class="product" data-catagory="traxanh">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1699287050_tra-xanh-latte-nong_400x400.jpg" alt="Sản phẩm">
+            <h3>Trà Xanh Latte (Nóng)</h3>
+            <div class="price-order">
+                <p>49.000đ</p>
+                <button class="add-button" data-product-id="22">+</button>
+            </div>           
+          </div>
+          
+          <div class="product" data-catagory="traxanh">
+            <img class="icon" src="	https://minio.thecoffeehouse.com/image/admin/chocolatenong_949029_400x400.jpg" alt="Sản phẩm">
+            <h3>Chocolate Nóng</h3>
+            <div class="price-order">
+                <p>55.000đ</p>
+                <button class="add-button" data-product-id="23">+</button>
+            </div>     
+          </div>
+
+          <div class="product" data-catagory="traxanh">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1699287058_tra-xanh-duong-den_400x400.jpg" alt="Sản phẩm">
+            <h3>Trà Xanh Đường Đen</h3>
+            <div class="price-order">
+                <p>59.000đ</p>
+                <button class="add-button" data-product-id="24">+</button>
+            </div>  
+          </div>
+
+          <div class="product" data-catagory="traxanh">
+            <img class="icon" src="	https://minio.thecoffeehouse.com/image/admin/1726647758_tra-xanh-latte-dam-vi_400x400.jpg" alt="Sản phẩm">
+            <h3>Trà Xanh Latte Đậm Vị</h3>
+            <div class="price-order">
+                <p>55.000đ</p>
+                <button class="add-button" data-product-id="25">+</button>
+            </div>     
+          </div>
+
+          <div class="product" data-catagory="traxanh">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1726647801_tra-xanh-latte-1_400x400.jpg" alt="Sản phẩm">
+            <h3>Trà Xanh Latte</h3>
+            <div class="price-order">
+                <p>55.000đ</p>
+                <button class="add-button" data-product-id="26">+</button>
+            </div>
+          </div>
+
+
+          <!--Đá xay Frosty-->
+          <div class="product" data-catagory="daxay">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1699287066_frosty-tra-xanh_400x400.jpg" alt="Sản phẩm">
+            <h3>Frosty Trà Xanh</h3>
+            <div class="price-order">
+                <p>59.000đ</p>
+                <button class="add-button" data-product-id="27">+</button>
+            </div>           
+          </div>
+
+          <div class="product" data-catagory="daxay">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1697441952_choco-chip_400x400.png" alt="Sản phẩm">
+            <h3>Frosty Choco Chip</h3>
+            <div class="price-order">
+                <p>59.000đ</p>
+                <button class="add-button" data-product-id="28">+</button>
+            </div>     
+          </div>
+
+          <div class="product" data-catagory="daxay">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1697441914_phin-gato_400x400.png" alt="Sản phẩm">
+            <h3>Frosty Phin-Gato</h3>
+            <div class="price-order">
+                <p>55.000đ</p>
+                <button class="add-button" data-product-id="29">+</button>
+            </div>  
+          </div>
+
+          <div class="product" data-catagory="daxay">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1697441945_banh-kem-dau_400x400.png" alt="Sản phẩm">
+            <h3>Frosty Bánh Kem Dâu</h3>
+            <div class="price-order">
+                <p>59.000đ</p>
+                <button class="add-button" data-product-id="30">+</button>
+            </div>     
+          </div>
+
+          <div class="product" data-catagory="daxay">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1697441934_caramel-arabica_400x400.png" alt="Sản phẩm">
+            <h3>Frosty Caramel Arabica</h3>
+            <div class="price-order">
+                <p>59.000đ</p>
+                <button class="add-button" data-product-id="31">+</button>
+            </div>
+            
+          </div>
+
+          <div class="product" data-catagory="daxay">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1697441939_ca-phe-duong-den_400x400.png" alt="Sản phẩm">
+            <h3>Frosty Cà Phê Đường Đen</h3>
+            <div class="price-order">
+                <p>59.000đ</p>
+                <button class="add-button" data-product-id="32">+</button>
+            </div> 
+          </div>
+
+
+          <!--Cà phê-->
+          <div class="product" data-catagory="caphe">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1639377816_ca-phe-den-nong_400x400.jpg" alt="Sản phẩm">
+            <h3>Cà Phê Đen Nóng</h3>
+            <div class="price-order">
+                <p>39.000đ</p>
+                <button class="add-button" data-product-id="33">+</button>
+            </div>           
+          </div>
+
+          <div class="product" data-catagory="caphe">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1639377770_cfsua-nong_400x400.jpg" alt="Sản phẩm">
+            <h3>Cà Phê Sữa Nóng</h3>
+            <div class="price-order">
+                <p>39.000đ</p>
+                <button class="add-button" data-product-id="34">+</button>
+            </div>     
+          </div>
+
+          <div class="product" data-catagory="caphe">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/espressoNong_612688_400x400.jpg" alt="Sản phẩm">
+            <h3>Espresso Nóng</h3>
+            <div class="price-order">
+                <p>45.000đ</p>
+                <button class="add-button" data-product-id="35">+</button>
+            </div>  
+          </div>
+
+          <div class="product" data-catagory="caphe">
+            <img class="icon" src="	https://minio.thecoffeehouse.com/image/admin/latte_851143_400x400.jpg" alt="Sản phẩm">
+            <h3>Latte Nóng</h3>
+            <div class="price-order">
+                <p>55.000đ</p>
+                <button class="add-button" data-product-id="36">+</button>
+            </div>     
+          </div>
+
+          <div class="product" data-catagory="caphe">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/cappuccino_621532_400x400.jpg" alt="Sản phẩm">
+            <h3>Cappuccino Nóng</h3>
+            <div class="price-order">
+                <p>55.000đ</p>
+                <button class="add-button" data-product-id="37">+</button>
+            </div>
+            
+          </div>
+
+          <div class="product" data-catagory="caphe">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1675355354_bg-tch-sua-da-no_400x400.jpg" alt="Sản phẩm">
+            <h3>The Coffee Delights Sữa Đá</h3>
+            <div class="price-order">
+                <p>45.000đ</p>
+                <button class="add-button" data-product-id="38">+</button>
+            </div> 
+          </div>
+
+
+          <!--Bánh mặn-->
+          <div class="product" data-catagory="banhman">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1732089423_bmq-bo_400x400.jpg" alt="Sản phẩm">
+            <h3>Bánh Mì Que Bò Nấm Xốt Bơ</h3>
+            <div class="price-order">
+                <p>19.000đ</p>
+                <button class="add-button" data-product-id="39">+</button>
+            </div>           
+          </div>
+
+          <div class="product" data-catagory="banhman">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1732089442_bmq-chabong_400x400.jpg" alt="Sản phẩm">
+            <h3>Bánh Mì Que Chà Bông Phô Mai Bơ Cay</h3>
+            <div class="price-order">
+                <p>19.000đ</p>
+                <button class="add-button" data-product-id="40">+</button>
+            </div>     
+          </div>
+
+          <div class="product" data-catagory="banhman">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1732089405_bmq-cotden_400x400.jpg" alt="Sản phẩm">
+            <h3>Bánh Mì Que Pate Cột Đèn</h3>
+            <div class="price-order">
+                <p>19.000đ</p>
+                <button class="add-button" data-product-id="41">+</button>
+            </div>  
+          </div>
+
+          <div class="product" data-catagory="banhman">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1698736606_butter-croissant_400x400.jpg" alt="Sản phẩm">
+            <h3>Butter Croissant</h3>
+            <div class="price-order">
+                <p>29.000đ</p>
+                <button class="add-button" data-product-id="42">+</button>
+            </div>     
+          </div>
+
+          <div class="product" data-catagory="banhman">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/croissant-trung-muoi_880850_400x400.jpg" alt="Sản phẩm">
+            <h3>Croissant Trứng Muối</h3>
+            <div class="price-order">
+                <p>39.000đ</p>
+                <button class="add-button" data-product-id="43">+</button>
+            </div>
+            
+          </div>
+
+          <div class="product" data-catagory="banhman">
+            <img class="icon" src="	https://minio.thecoffeehouse.com/image/admin/1669736993_cha-bong-pho-mai_400x400.png" alt="Sản phẩm">
+            <h3>Chà Bông Phô Mai</h3>
+            <div class="price-order">
+                <p>39.000đ</p>
+                <button class="add-button" data-product-id="44">+</button>
+            </div> 
+          </div>
+
+
+          <!--Món nóng-->
+          <div class="product" data-catagory="monnong">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/caramelmacchiatonong_168039_400x400.jpg" alt="Sản phẩm">
+            <h3>Caramel Macchiato Nóng</h3>
+            <div class="price-order">
+                <p>55.000đ</p>
+                <button class="add-button" data-product-id="45">+</button>
+            </div>           
+          </div>
+
+          <div class="product" data-catagory="monnong">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1636647328_arme-nong_400x400.jpg" alt="Sản phẩm">
+            <h3>Americano Nóng</h3>
+            <div class="price-order">
+                <p>49.000đ</p>
+                <button class="add-button" data-product-id="46">+</button>
+            </div>     
+          </div>
+
+          <div class="product" data-catagory="monnong">
+            <img class="icon" src="	https://minio.thecoffeehouse.com/image/admin/tra-sen-nong_025153_400x400.jpg" alt="Sản phẩm">
+            <h3>Oolong Tứ Qúy Sen (Nóng)</h3>
+            <div class="price-order">
+                <p>59.000đ</p>
+                <button class="add-button" data-product-id="47">+</button>
+            </div>  
+          </div>
+
+          <div class="product" data-catagory="monnong">
+            <img class="icon" src="	https://minio.thecoffeehouse.com/image/admin/latte_851143_400x400.jpg" alt="Sản phẩm">
+            <h3>Latte Nóng</h3>
+            <div class="price-order">
+                <p>55.000đ</p>
+                <button class="add-button" data-product-id="48">+</button>
+            </div>     
+          </div>
+
+          <div class="product" data-catagory="monnong">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/tdcs-nong_288997_400x400.jpg" alt="Sản phẩm">
+            <h3>Trà Đào Cam Sả Nóng</h3>
+            <div class="price-order">
+                <p>59.000đ</p>
+                <button class="add-button" data-product-id="49">+</button>
+            </div>
+            
+          </div>
+
+          <div class="product" data-catagory="monnong">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/chocolatenong_949029_400x400.jpg" alt="Sản phẩm">
+            <h3>Chocolate Nóng</h3>
+            <div class="price-order">
+                <p>55.000đ</p>
+                <button class="add-button" data-product-id="50">+</button>
+            </div> 
+          </div>
+
+
+
+          <!--Bánh Ngọt-->
+          <div class="product" data-catagory="banhngot">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1732089474_mochi-trasua_400x400.jpg" alt="Sản phẩm">
+            <h3>Mochi Kem Trà Sữa Trân Châu</h3>
+            <div class="price-order">
+                <p>19.000đ</p>
+                <button class="add-button" data-product-id="51">+</button>
+            </div>           
+          </div>
+
+          <div class="product" data-catagory="banhngot">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1711964586_hcm-mousse-ca-phe-cloudfee-dua_400x400.jpg" alt="Sản phẩm">
+            <h3>Mousse Cà Phê CloudFee Dừa</h3>
+            <div class="price-order">
+                <p>45.000đ</p>
+                <button class="add-button" data-product-id="52">+</button>
+            </div>     
+          </div>
+
+          <div class="product" data-catagory="banhngot">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1643102019_mochi-phucbontu_400x400.jpg" alt="Sản phẩm">
+            <h3>Mochi Kem Phúc Bồn Tử</h3>
+            <div class="price-order">
+                <p>19.000đ</p>
+                <button class="add-button" data-product-id="53">+</button>
+            </div>  
+          </div>
+
+          <div class="product" data-catagory="banhngot">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1643102034_mochi-vietquat_400x400.jpg" alt="Sản phẩm">
+            <h3>Mochi Kem Việt Quốc</h3>
+            <div class="price-order">
+                <p>19.000đ</p>
+                <button class="add-button" data-product-id="54">+</button>
+            </div>     
+          </div>
+
+          <div class="product" data-catagory="banhngot">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1655348107_mochi-choco_400x400.jpg" alt="Sản phẩm">
+            <h3>Mochi Kem Chocolate</h3>
+            <div class="price-order">
+                <p>19.000đ</p>
+                <button class="add-button" data-product-id="55">+</button>
+            </div>
+            
+          </div>
+
+          <div class="product" data-catagory="banhngot">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1638170067_gau_400x400.jpg" alt="Sản phẩm">
+            <h3>Mousse Gấu Chocolate</h3>
+            <div class="price-order">
+                <p>19.000đ</p>
+                <button class="add-button" data-product-id="56">+</button>
+            </div> 
+          </div>
+
+          <div class="product" data-catagory="banhngot">
+            <img class="icon" src="	https://minio.thecoffeehouse.com/image/admin/1714704891_mit-say-666228-400x400_400x400.jpg" alt="Sản phẩm">
+            <h3>Mít Sấy</h3>
+            <div class="price-order">
+                <p>20.000đ</p>
+                <button class="add-button" data-product-id="57">+</button>
+            </div>
+            
+          </div>
+
+          <div class="product" data-catagory="banhngot">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1638170137_tiramisu_400x400.jpg" alt="Sản phẩm">
+            <h3>Mousse Tiramisu</h3>
+            <div class="price-order">
+                <p>35.000đ</p>
+                <button class="add-button" data-product-id="58">+</button>
+            </div> 
+          </div>
+
+
+          <!--Topping-->
+          <div class="product" data-catagory="Topping">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1732090577_tranchauhoangkim_400x400.jpg" alt="Sản phẩm">
+            <h3>Trân Châu Hoàng Kim</h3>
+            <div class="price-order">
+                <p>10.000đ</p>
+                <button class="add-button" data-product-id="59">+</button>
+            </div>           
+          </div>
+
+          <div class="product" data-catagory="Topping">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1729492295_kem-pho-mai-macchiato_400x400.jpg" alt="Sản phẩm">
+            <h3>Foam Phô Mai</h3>
+            <div class="price-order">
+                <p>10.000đ</p>
+                <button class="add-button" data-product-id="60">+</button>
+            </div>     
+          </div>
+
+          <div class="product" data-catagory="Topping">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1729492274_thach-kim-quat_400x400.jpg" alt="Sản phẩm">
+            <h3>Thạch Kim Quốc</h3>
+            <div class="price-order">
+                <p>10.000đ</p>
+                <button class="add-button" data-product-id="61">+</button>
+            </div>  
+          </div>
+
+          <div class="product" data-catagory="Topping">
+            <img class="icon" src="	https://minio.thecoffeehouse.com/image/admin/1729492267_thach-suong-sao_400x400.jpg" alt="Sản phẩm">
+            <h3>Thạch Sương Sáo</h3>
+            <div class="price-order">
+                <p>10.000đ</p>
+                <button class="add-button" data-product-id="62">+</button>
+            </div>     
+          </div>
+
+          <div class="product" data-catagory="Topping">
+            <img class="icon" src="	https://minio.thecoffeehouse.com/image/admin/1699846678_tran-chau-trang_400x400.jpg" alt="Sản phẩm">
+            <h3>Trân Châu Trắng</h3>
+            <div class="price-order">
+                <p>10.000đ</p>
+                <button class="add-button" data-product-id="63">+</button>
+            </div>
+            
+          </div>
+
+          <div class="product" data-catagory="Topping">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1699847107_hat-sen_400x400.jpg" alt="Sản phẩm">
+            <h3>Hạt Sen</h3>
+            <div class="price-order">
+                <p>10.000đ</p>
+                <button class="add-button" data-product-id="64">+</button>
+            </div> 
+          </div>
+
+          <div class="product" data-catagory="Topping">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1699846421_thach-ca-phe_400x400.jpg" alt="Sản phẩm">
+            <h3>Thạch Cà Phê</h3>
+            <div class="price-order">
+                <p>10.000đ</p>
+                <button class="add-button" data-product-id="65">+</button>
+            </div>
+            
+          </div>
+
+          <div class="product" data-catagory="Topping">
+            <img class="icon" src="	https://minio.thecoffeehouse.com/image/admin/1699852028_ao-mieng_400x400.jpg" alt="Sản phẩm">
+            <h3>Đào Miếng</h3>
+            <div class="price-order">
+                <p>10.000đ</p>
+                <button class="add-button" data-product-id="66">+</button>
+            </div> 
+          </div>
+
+
+          <!--Cà phê trà đóng gói-->
+          <div class="product" data-catagory="caphetra">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1714646385_1639648355-ca-phe-sua-da-hoa-tan-tui-25x22gr-400x400_400x400.jpg" alt="Sản phẩm">
+            <h3>Cà Phê Sữa Đá Hòa Tan Túi 25x22G</h3>
+            <div class="price-order">
+                <p>127.000đ</p>
+                <button class="add-button" data-product-id="67">+</button>
+            </div>           
+          </div>
+
+          <div class="product" data-catagory="caphetra">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1714646758_1639648297-ca-phe-rang-xay-original-1-250gr-400x400_400x400.jpg" alt="Sản phẩm">
+            <h3>Cà Phê Rang Xay Original 1 250G</h3>
+            <div class="price-order">
+                <p>82.000đ</p>
+                <button class="add-button" data-product-id="68">+</button>
+            </div>     
+          </div>
+
+          <div class="product" data-catagory="caphetra">
+            <img class="icon" src="https://minio.thecoffeehouse.com/image/admin/1714646465_cpsd-3in1-971575-400x400-1_400x400.jpg" alt="Sản phẩm">
+            <h3>Cà Phê Sữa Đá Hòa Tan (10 gói x 22g)</h3>
+            <div class="price-order">
+                <p>53.000đ</p>
+                <button class="add-button" data-product-id="69">+</button>
+            </div>  
+          </div>
+
+          <div id="product-detail-modal" class="modal hidden">
+            <div class="modal-content">
+               <!-- Header -->
+                <div class="modal-header">
+                  <span class="close-button">&times;</span>
+                  <h2>Thêm món mới</h2>
+              </div>
+              <div class="modal-product-info">
+                <img id="modal-product-image" src="" alt="">
+                <h2 id="modal-product-name"></h2>
+                <p id="modal-product-description"></p>
+                
+
+                <!--Gía và chọn số lượng  -->
+                <div class="quantity-selector">
+                  <p class="product-price"><span id="modal-product-price"></span></p>
+                  <div class="quantity-controls">
+                      <button id="decrease-quantity">-</button>
+                      <span id="modal-product-quantity">1</span>
+                      <button id="increase-quantity">+</button> <br>
+                  </div>
+                </div>
+              <!-- Nhập ghi chú -->
+              <textarea id="modal-product-note" placeholder="Ghi chú thêm cho món này"></textarea>
+
+              </div>
+        
+                <button id="add-to-cart" class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+            </div>
+        </div>
+
+        
+        </div>
+        
+      </div>
+
+    
+      <div class="footer__main-content">
+        <br>
+        <div class="footer__grid-container">
+            <div class="footer__grid-item">
+                <b>Giới thiệu</b>
+                <div style="font-size: 13px;">
+                    <br><i>AboutUs</i> <br>
+                    <br><i>Sản phẩm</i> <br>
+                    <br><i>Cửa hàng</i> <br>
+                    <br><i>Tuyển dụng</i>
+                </div>
+            </div>
+            <div class="footer__grid-item">
+                <b>Điều khoản</b>
+                <div style="font-size: 13px;">
+                    <br><i>Điều khoản sử dụng</i> <br>
+                    <br><i>Chính sách bảo mật</i>
+                </div>
+            </div>
+            <div class="footer__grid-item">
+                <b>Đặt hàng</b>
+                <div style="font-size: 13px;">
+                    <br><i class="fas fa-phone"></i> &nbsp;<i>Phone: 0123456789</i> <br>
+                    <br><i class="fab fa-facebook-f"></i> &nbsp;&nbsp;&nbsp;<i>Nhóm 14</i><br>
+                    <br>
+                </div>
+            </div>
+            <div class="footer__grid-item">
+
+            </div>
+        </div>
+    </div>
+      
+    
+
+    <script src="javascript/image-slide.js"></script>
+    <script src="javascript/menu-catagories.js"></script>
+    <script src="javascript/menu-detail-product.js"></script>
+    <script src="javascript/data-menu.js"></script>
+    <script src="javascript/cartQuantity.js"></script>
 </body>
 </html>
