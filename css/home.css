@@ -212,7 +212,6 @@ body{
     display: grid;
     grid-template-columns: repeat(4, auto);
     gap: 5px;
-    
 }
 
 .footer__grid-item{
