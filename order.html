@@ -121,19 +121,32 @@
 
             <hr style="background-color: red; width: 100px; height: 2px; float: left;"><br><br>
             <div class="input-group">
-                <div class="label-with-icon">
+                <div class="label-with-icon" onclick="toggleDropdown()">
                     <img src="https://minio.thecoffeehouse.com/images/tch-web-order/Delivery2.png" alt="Delivery Icon">
-                    <div class="delivery">
+                    <div class="delivery" id="deliveryText">
                         <p><span><b>Ký túc xá Khu B - Đại học Quốc gia TP.HCM</b></span><br>
                             Ký túc xá Khu B - Đại học Quốc gia TP.HCM, Đ. Mạc Đĩnh Chi, Khu phố Tân Hòa, Dĩ An, Bình
                             Dương, Việt Nam
                         </p>
                     </div>
-
-
                 </div>
-
             </div>
+            
+            <!-- Hidden Dropdown for Address Selection -->
+            <div id="addressDropdown" class="address-dropdown">
+                <ul>
+                    <li onclick="changeAddress('Ký túc xá Khu A - Đại học Quốc gia TP.HCM')">Ký túc xá Khu A - Đại học Quốc gia TP.HCM</li>
+                    <li onclick="changeAddress('Ký túc xá Khu C - Đại học Quốc gia TP.HCM')">Ký túc xá Khu C - Đại học Quốc gia TP.HCM</li>
+                    <li onclick="changeAddress('Ký túc xá Khu D - Đại học Quốc gia TP.HCM')">Ký túc xá Khu D - Đại học Quốc gia TP.HCM</li>
+                </ul>
+            </div>
+            
+            
+            
+            
+            
+            
+
 
             <div class="input-group">
                 <input type="text" placeholder="Nhập tên người nhận">
