@@ -300,3 +300,27 @@ input {
     text-decoration: underline; /* Gạch chân khi di chuột */
     color: #d15e00; /* Đổi màu cam đậm hơn */
 }
+
+.address-dropdown {
+    display: none; /* Hide the dropdown by default */
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ddd;
+    width: 300px;
+    z-index: 10;
+    margin-top: 10px;
+}
+
+.address-dropdown ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.address-dropdown li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.address-dropdown li:hover {
+    background-color: #f1f1f1;
+}
