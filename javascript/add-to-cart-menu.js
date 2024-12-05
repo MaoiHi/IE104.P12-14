@@ -1,3 +1,4 @@
+
 const products = [
     {
         id: 1,
@@ -621,28 +622,8 @@ const products = [
         note: ""
     },
 
+
 ];
 
-// Xử lý sự kiện khi nhấn "Thêm vào giỏ hàng"
-document.querySelectorAll(".add-button").forEach((button) => {
-    button.addEventListener("click", (e) => {
-        const productId = e.target.dataset.productId; // Lấy ID sản phẩm từ nút
-        const product = products.find((item) => item.id == productId); // Tìm sản phẩm từ danh sách
-        
-        if (product) {
-            // Lấy danh sách giỏ hàng hiện tại từ Local Storage
-            let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-            // Kiểm tra sản phẩm đã có trong giỏ chưa
-            const existingProduct = cart.find((item) => item.id == product.id);
-            if (existingProduct) {
-                existingProduct.quantity += 1; // Nếu có, tăng số lượng
-            } else {
-                cart.push(product); // Nếu chưa có, thêm sản phẩm vào giỏ
-            }
 
-            // Lưu lại giỏ hàng vào Local Storage
-            localStorage.setItem("cart", JSON.stringify(cart));
-        }
-    });
-});

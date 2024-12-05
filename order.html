@@ -210,20 +210,14 @@
             </div>
         </div>
 
+
+        <div>
         <div class="right-panel">
             <div class="section-title">Các món đã chọn</div>
             <div class="order-food">
                 <div>
                     <p>1 x Trà Xanh Latte</p>
                     <p>55.000đ</p>
-                </div>
-
-                <div>
-                    <p>Nhỏ</p>
-                </div>
-
-                <div>
-                    <p>Kem Phô Mai Macchiato</p>
                 </div>
             </div>
 
@@ -236,11 +230,11 @@
             <div class="order-summary">
                 <div>
                     <p>Thành tiền</p>
-                    <p>55.000đ</p>
+                    <p class="price">0đ</p>
                 </div>
                 <div>
                     <p>Phí giao hàng</p>
-                    <p>18.000đ</p>
+                    <p>0đ</p>
                 </div>
                 <div>
                     <p>Khuyến mãi</p>
@@ -250,7 +244,7 @@
                 </div>
             </div>
 
-            <div class="order-summary" onclick="openPopup()">
+            <div class="order-summary__button" onclick="openPopup()">
                 <button id="km"><b>Mã giảm giá</b></button>
             </div>
 
@@ -261,12 +255,16 @@
                 </div>
                 <button class="order-button" onclick="showText()">Đặt hàng</button>
             </div>
-            <div id="text">Đặt hàng thành công!!!</div>
-
-            <div>
-                <button class="delete-order-btn"><i class="fa-solid fa-trash"></i> Xóa đơn hàng</button>
-            </div>
+            
         </div>
+       
+        <div>
+            <div id="text">Đặt hàng thành công!!!</div>
+            <button class="delete-order-btn"><i class="fa-solid fa-trash"></i> Xóa đơn hàng</button>
+        </div>
+    </div>
+        
+        
         <div class="popup-overlay" id="popupOverlay">
             <div class="popup-content">
                 <div>
@@ -321,6 +319,7 @@
     </div>
     <script src="javascript/discount-popup.js"></script>
     <script src="javascript/submit-order.js"></script>
+    <script src="javascript/add-to-cart-order.js"></script>
 </body>
 
 </html>
