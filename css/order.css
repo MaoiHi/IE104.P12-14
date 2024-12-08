@@ -62,13 +62,13 @@
 
 .icon-payment-method label {
     display: flex;
-    align-items: center; /* Đảm bảo các phần tử trong label được căn chỉnh */
-    gap: 8px; /* Khoảng cách giữa các phần tử */
+    align-items: center; 
+    gap: 8px; 
 }
 
 .payment-icon {
-    width: 24px; /* Điều chỉnh kích thước ảnh */
-    height: auto; /* Tự động điều chỉnh chiều cao */
+    width: 24px; 
+    height: auto; 
     background-color: transparent;
     mix-blend-mode: multiply;
 }
@@ -95,14 +95,14 @@
     font-size: 14px;
 }
 .order-food .order-item {
-    display: flex; /* Sử dụng flex để căn chỉnh */
-    justify-content: space-between; /* Đẩy tên món và giá sang hai bên */
-    margin-bottom: 10px; /* Tạo khoảng cách giữa các mục */
+    display: flex; 
+    justify-content: space-between; 
+    margin-bottom: 10px; 
 }
 .order-food .order-item p {
-    margin: 0; /* Xóa khoảng cách mặc định của <p> */
-    font-size: 14px; /* Đồng bộ kích thước chữ */
-    white-space: nowrap; /* Ngăn giá bị xuống dòng */
+    margin: 0; 
+    font-size: 14px; 
+    white-space: nowrap; 
 }
 .order-food div {
     display: flex;
@@ -171,26 +171,26 @@ input {
 .label-with-icon {
     display: flex;
     align-items: center;
-    gap: 10px; /* Khoảng cách giữa ảnh và label */
+    gap: 10px;
 }
 
 .label-with-icon img {
-    width: 24px; /* Điều chỉnh kích thước ảnh */
-    height: 24px; /* Điều chỉnh kích thước ảnh */
+    width: 24px; 
+    height: 24px; 
 }
 
 
 .total-box {
     position: absolute;
-    bottom: 0; /* Sát đáy nhưng cách dưới 10px */
+    bottom: 0; 
     left: 0;
     right: 0;
-    margin-top: 20px; /* Cách phần trên 20px */
+    margin-top: 20px; 
     text-align: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(to right, #ff9800, #f39c12); /* Gradient màu cam */
+    background: linear-gradient(to right, #ff9800, #f39c12); 
     padding: 15px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px; 
@@ -203,7 +203,7 @@ input {
 }
 
 .total-info p {
-    margin: 0; /* Loại bỏ khoảng cách */
+    margin: 0; 
 }
 
 .price {
@@ -211,10 +211,10 @@ input {
 }
 
 .order-button {
-    background-color: #fff; /* Màu nền trắng */
-    color: #ff9800; /* Màu chữ cam */
+    background-color: #fff; 
+    color: #ff9800;
     border: none;
-    border-radius: 20px; /* Bo tròn hoàn toàn */
+    border-radius: 20px;
     padding: 16px 24px;
     font-size: 14px;
     font-weight: bold;
@@ -228,15 +228,15 @@ input {
 
 
 .custom-radio {
-    width: 20px; /* Điều chỉnh kích thước */
+    width: 20px; 
     height: 20px;
-    /* accent-color: transparent; Xóa màu mặc định */
-    cursor: pointer; /* Con trỏ chuột khi hover */
+  
+    cursor: pointer; 
 }
 
-/* Tạo hiệu ứng khi nút radio được chọn */
+
 .custom-radio:checked {
-    accent-color: #ff9800; /* Màu cam khi được chọn */
+    accent-color: #ff9800; 
     border: 2px solid #ffffff;
 }
 
@@ -249,24 +249,24 @@ input {
 }
 
 .mdCheckbox {
-    width: 28px; /* Kích thước checkbox */
+    width: 28px; 
     height: 24px;
     cursor: pointer;
-    appearance: none; /* Loại bỏ kiểu mặc định */
-    border: 2px solid #ff9800; /* Viền màu cam */
-    border-radius: 4px; /* Bo tròn nhẹ (tuỳ chỉnh nếu cần) */
-    background-color: transparent; /* Màu nền trong suốt */
+    appearance: none;
+    border: 2px solid #ff9800; 
+    border-radius: 4px; 
+    background-color: transparent; 
     display: inline-block;
     position: relative;
 }
 
-/* Khi checkbox được chọn */
+
 .mdCheckbox:checked {
-    background-color: #ff9800; /* Màu cam khi được chọn */
-    border: 2px solid #ff9800; /* Giữ viền cam */
+    background-color: #ff9800; 
+    border: 2px solid #ff9800; 
 }
 
-/* Tạo dấu check màu trắng khi được chọn */
+
 .mdCheckbox:checked::after {
     content: '';
     position: absolute;
@@ -274,24 +274,24 @@ input {
     left: 6px;
     width: 6px;
     height: 12px;
-    border: solid #ffffff; /* Màu trắng */
+    border: solid #ffffff; 
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
 }
 
-/* Thiết kế nút "Xóa đơn hàng" */
+
 .delete-order-btn {
-    display: block; /* Để nút nằm thành hàng riêng */
-    width: 100%; /* Chiều rộng bằng khung chứa */
-    padding: 10px; /* Khoảng cách trong nút */
-    margin-top: 20px; /* Khoảng cách giữa nút và nội dung phía trên */
-    background-color: #F5E9DA; /* Màu nền đỏ */
-    color: chocolate; /* Màu chữ trắng */
-    border: none; /* Xóa viền */
-    border-radius: 8px; /* Bo tròn góc */
-    font-size: 16px; /* Kích thước chữ */
-    cursor: pointer; /* Con trỏ trỏ tay khi hover */
-    text-align: center; /* Căn giữa chữ */
+    display: block; 
+    width: 100%; 
+    padding: 10px; 
+    margin-top: 20px; 
+    background-color: #F5E9DA; 
+    color: chocolate; 
+    border: none; 
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer; 
+    text-align: center; 
 }
 
  #text {
@@ -309,21 +309,21 @@ input {
     transform: translateY(0); 
 }
 
-/* Styling for the terms link */
+
 .terms-link {
-    color: #f58220; /* Màu cam cho liên kết */
-    text-decoration: none; /* Bỏ gạch chân mặc định */
-    transition: text-decoration 0.3s, color 0.3s; /* Hiệu ứng mượt khi thay đổi */
+    color: #f58220; 
+    text-decoration: none; 
+    transition: text-decoration 0.3s, color 0.3s; 
 }
 
-/* Hover effect: Gạch chân và đổi màu */
+
 .terms-link:hover {
-    text-decoration: underline; /* Gạch chân khi di chuột */
-    color: #d15e00; /* Đổi màu cam đậm hơn */
+    text-decoration: underline; 
+    color: #d15e00;
 }
 
 .address-dropdown {
-    display: none; /* Hide the dropdown by default */
+    display: none; 
     position: absolute;
     background-color: white;
     border: 1px solid #ddd;

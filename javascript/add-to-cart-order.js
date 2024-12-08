@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const cart = JSON.parse(localStorage.getItem("cart")) || []; // Lấy giỏ hàng từ Local Storage
+    const cart = JSON.parse(sessionStorage.getItem("cart")) || []; // Lấy giỏ hàng từ Local Storage
     const orderFoodContainer = document.querySelector(".order-food"); // Vị trí hiển thị danh sách món
-    const order = document.querySelector("order-button");
 
     // Hàm cập nhật tổng giá
     function updateTotal() {
@@ -21,9 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    if(order){
-        localStorage.removeItem("cart");
-    }
+    
 
 
     // Hiển thị sản phẩm trong giỏ

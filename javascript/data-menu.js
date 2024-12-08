@@ -631,7 +631,7 @@ document.querySelectorAll(".add-button").forEach((button) => {
         
         if (product) {
             // Lấy danh sách giỏ hàng hiện tại từ Local Storage
-            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            let cart = JSON.parse(sessionStorage.getItem("cart")) || [];
 
             // Kiểm tra sản phẩm đã có trong giỏ chưa
             const existingProduct = cart.find((item) => item.id == product.id);
@@ -642,7 +642,7 @@ document.querySelectorAll(".add-button").forEach((button) => {
             }
 
             // Lưu lại giỏ hàng vào Local Storage
-            localStorage.setItem("cart", JSON.stringify(cart));
+            sessionStorage.setItem("cart", JSON.stringify(cart));
         }
     });
 });

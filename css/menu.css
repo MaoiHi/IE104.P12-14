@@ -34,10 +34,10 @@
   .category img {
     width: 80px;
     height: 80px;
-    border-radius: 50%; /* Biến hình ảnh thành hình tròn */
-    object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
+    border-radius: 50%; 
+    object-fit: cover; 
     margin-bottom: 8px;
-    border: 2px solid #f3f3f3; /* Thêm đường viền nhẹ cho hình ảnh */
+    border: 2px solid #f3f3f3; 
   }
   
   .category p {
@@ -47,12 +47,12 @@
   }
   
   .category:hover img {
-    transform: scale(1.1); /* Phóng to hình ảnh khi hover */
-    border-color: #ff5a5f; /* Đổi màu viền khi hover */
+    transform: scale(1.1); 
+    border-color: #ff5a5f; 
   }
   
   .category:hover p {
-    color: #ff5a5f; /* Đổi màu chữ khi hover */
+    color: #ff5a5f; 
   }
   
   
@@ -71,7 +71,7 @@
     padding: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
-    display: none; /* Ẩn tất cả sản phẩm ban đầu */
+    display: none; 
   }
   
   .product:hover {
@@ -125,7 +125,7 @@
   }
 
 
-/*model detai product*/
+
   .modal.hidden {
     display: none;
 }
@@ -148,16 +148,16 @@
   background: #fff;
   padding: 20px;
   border-radius: 10px;
-  width: 90%; /* Đảm bảo phù hợp trên màn hình nhỏ */
-  max-width: 400px; /* Giới hạn chiều rộng tối đa */
-  max-height: 90%; /* Giới hạn chiều cao tối đa của modal */
-  overflow-y: auto; /* Thêm thanh cuộn dọc nếu nội dung vượt quá chiều cao */
+  width: 90%; 
+  max-width: 400px; 
+  max-height: 90%; 
+  overflow-y: auto; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   position: relative;
 }
 
 
-/* Header */
+
 .modal-header {
   display: flex;
   justify-content: space-between;
@@ -181,7 +181,7 @@
 }
 
 
-/* Product Info */
+
 .modal-product-info img {
   width: 100%;
   border-radius: 10px;
@@ -206,7 +206,7 @@
   margin: 10px 0;
 }
 
-/* Quantity Selector */
+
 .quantity-selector {
   display: flex;
   align-items: center;
@@ -237,7 +237,7 @@
   text-align: center; 
 }
 
-/* Notes Section */
+
 #modal-product-note {
   width: 100%;
   border: 1px solid #e0e0e0;
@@ -248,7 +248,7 @@
 }
 
 
-/* Add to Cart Button */
+
 .add-to-cart-btn {
   width: 100%;
   padding: 15px;
@@ -267,7 +267,7 @@
 }
 
 
-/* Additional adjustments for small screens */
+
 @media (max-width: 768px) {
   .modal-content {
       width: 95%;
@@ -276,7 +276,7 @@
 }
 
 
-/* Container for the cart icon */
+
 .cart-icon-container {
   position: relative;
   display: inline-block;
