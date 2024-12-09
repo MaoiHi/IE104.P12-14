@@ -1,0 +1,335 @@
+.job-list__container {
+    width: 100%;
+    min-height: calc(100vh - 580px);
+    font-family: Inter;
+    color: #141414;
+    background-color: white;
+}
+
+.job-list__search {
+    min-height: 118px;
+    width: 100%;
+}
+
+.job-list__search-box {
+    padding: 32px 0;
+    display: flex;
+    justify-content: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover
+}
+
+.main-job__search-container,
+.main-job__search-wapper--backgound {
+    width: 100%;
+
+}
+
+.main-job__search-container {
+    display: flex;
+    justify-content: center;
+}
+
+.main-job__search-wapper {
+    background: #fff;
+    box-shadow: 0 16px 24px rgba(0, 0, 0, .06), 0 2px 6px rgba(0, 0, 0, .04), 0 0 1px rgba(0, 0, 0, .04);
+    border-radius: 8px;
+    width: 736px;
+    height: 52px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 6px 8px 6px 16px;
+    color: #141414
+}
+
+.main-job__search-input {
+    flex-basis: 50%;
+    padding-right: 8px;
+    border-right: 1px solid #eee
+}
+
+.main-job__search-input input {
+    border: none;
+    width: 100%
+}
+
+.text-small {
+    font-size: 12px
+}
+
+.main-job__search-address {
+    flex-basis: 36%;
+    padding: 0 24px;
+    border-right: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    cursor: pointer
+}
+
+.mr-2,
+.mx-2 {
+    margin-right: .5rem
+}
+
+.main-job__search-btn-box {
+    flex-basis: 20%;
+    padding-left: 24px
+}
+
+.main-job__search-btn {
+    height: 40px;
+    width: 130px;
+    background: #d33;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff
+}
+
+.job-list__search-box-mb,
+.job-list__show-on-mb {
+    display: none
+}
+
+.job-list__search-input-mb {
+    flex-basis: 45%;
+    max-width: 45%;
+    padding: 18px 12px 18px 16px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: relative
+}
+
+.job-list__search-select-mb {
+    flex-basis: 40%;
+    max-width: 40%;
+    padding: 18px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    cursor: pointer
+}
+
+.job-list__search-select-mb-value {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px
+}
+
+.text-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.job-list__search-filter-mb {
+    flex-basis: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    cursor: pointer
+}
+
+.job-list__wapper {
+    background: #f6f6f6;
+    padding: 16px 160px 32px;
+    display: flex;
+    justify-content: center
+}
+
+.job-list__filter {
+    flex-basis: 35%;
+    width: 35%;
+    max-width: 248px;
+    display: flex;
+    flex-direction: column
+}
+
+.job-list__filter-store {
+    padding: 16px;
+    background: #fff;
+    border: 1px solid #eee;
+    box-sizing: border-box;
+    box-shadow: 0 16px 24px rgba(0, 0, 0, .06), 0 2px 6px rgba(0, 0, 0, .04), 0 0 1px rgba(0, 0, 0, .04);
+    border-radius: 4px
+}
+
+.job-list__filter-title {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    padding-bottom: 16px
+}
+
+.job-list__filter-list {}
+
+.job-list__filter-item {
+    font-size: 16px;
+    line-height: 24px
+}
+
+.job-list__filter-item.active {
+    background: #ffefef;
+    border-radius: 8px
+}
+
+.job-list__filter-item.active,
+.job-list__filter-item:hover {
+    cursor: pointer;
+    color: var(--btn-color)
+}
+
+.mt-4,
+.my-4 {
+    margin-top: 1.5rem
+}
+
+.job-list__body {
+    max-width: 753px;
+    flex: 1;
+    margin-left: 18px;
+    background: #fff;
+    border: 1px solid #eee;
+    box-sizing: border-box;
+    box-shadow: 0 16px 24px rgba(0, 0, 0, .06), 0 2px 6px rgba(0, 0, 0, .04), 0 0 1px rgba(0, 0, 0, .04);
+    border-radius: 4px;
+    height: fit-content
+}
+
+.job-list__body-info {
+    padding: 16px 24px
+}
+
+.job-list__body-count {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgb(255, 162, 0);
+}
+
+.job-list__body-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 4px
+}
+
+.job-list__item {
+    min-height: 142px;
+    padding: 24px;
+    box-shadow: inset 0 -1px 0 #f5f5f5
+}
+
+.job-list__item-unit {
+    padding: 1px 8px;
+    font-size: 12px;
+    line-height: 20px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    width: fit-content
+}
+
+.job-list__item-unit--store {
+    color: #30c894;
+    background: #eafaf4
+}
+
+.job-list__item-body {
+    display: flex
+}
+
+.job-list__item-left {
+    flex: 1
+}
+
+.job-list__item-name {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 8px
+}
+
+.job-list__item-left-info,
+.job-list__item-mb-deadline {
+    color: #333;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center
+}
+
+.job-list__item-right {
+    display: block
+}
+
+.job-list__item-btn-apply {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    height: 40px;
+    width: 156px;
+    border-radius: 4px;
+    background: #fff;
+    border: 1px solid #e2e2e2;
+    padding: 10px 16px;
+    align-items: center
+}
+
+.job-list__item-btn-apply:hover {
+    background-color: #f5f5f5;
+    cursor: pointer
+}
+
+.job-list__body-paging {
+    padding: 16px 24px
+}
+
+.job-list__body-paging {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    border-top: 1px solid #eee;
+    background-color: #fff;
+}
+
+.paging-btn {
+    background-color: rgb(255, 162, 0);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.paging-btn:disabled {
+    background-color: #f5f5f5;
+    color: #999;
+    cursor: not-allowed;
+}
+
+.paging-btn:hover:not(:disabled) {
+    background-color: rgb(255, 128, 0);
+}
+
+.paging-info {
+    font-size: 14px;
+    color: #333;
+}
