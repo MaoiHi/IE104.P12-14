@@ -11,7 +11,7 @@ body{
     color: #3E2723;
 }
 
-/* Container for the policy content */
+
 .policy-container {
     max-width: 900px;
     margin: 0 auto;
@@ -21,7 +21,7 @@ body{
     padding: 30px;
 }
 
-/* Title Styling */
+
 .policy-title {
     text-align: center;
     font-size: 24px;
@@ -30,7 +30,7 @@ body{
     margin-bottom: 20px;
 }
 
-/* Headings Styling */
+
 .policy-content h2 {
     font-size: 20px;
     font-weight: bold;
@@ -38,14 +38,14 @@ body{
     margin-top: 20px;
 }
 
-/* Paragraph Styling */
+
 .policy-content p {
     font-size: 16px;
     color: #555;
     margin-bottom: 15px;
 }
 
-/* Unordered List Styling */
+
 .policy-content ul {
     list-style-type: disc;
     margin-left: 20px;

@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const cart = JSON.parse(sessionStorage.getItem("cart")) || []; // Lấy giỏ hàng từ Local Storage
-    const orderFoodContainer = document.querySelector(".order-food"); // Vị trí hiển thị danh sách món
+    const cart = JSON.parse(sessionStorage.getItem("cart")) || []; 
+    const orderFoodContainer = document.querySelector(".order-food"); 
 
-    // Hàm cập nhật tổng giá
+    
     function updateTotal() {
         let total = cart.reduce((sum, item) => {
             return sum + item.quantity * parseInt(item.price.replace(".", "").replace("đ", ""));
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
 
 
-    // Hiển thị sản phẩm trong giỏ
+    
     cart.forEach((product) => {
         const productDiv = document.createElement("div");
         productDiv.classList.add("order-item");
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
         orderFoodContainer.appendChild(productDiv);
     });
 
-    // Cập nhật tổng giá
+  
     updateTotal();
     updateTotal1();
 });

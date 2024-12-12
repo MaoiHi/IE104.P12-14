@@ -281,9 +281,9 @@
     font-size: 16px;
     line-height: 20px;
     height: 40px;
-    width: 156px;
-    border-radius: 4px;
-    background: #fff;
+    width: 130px;
+    border-radius: 10px;
+    background: rgb(255, 162, 0);
     border: 1px solid #e2e2e2;
     padding: 10px 16px;
     align-items: center

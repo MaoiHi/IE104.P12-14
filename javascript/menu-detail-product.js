@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Xử lý tăng/giảm số lượng
+    
     decreaseQuantity.addEventListener("click", () => {
         if (currentProduct && currentProduct.quantity > 1) {
             currentProduct.quantity--;
@@ -53,14 +53,14 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Xử lý ghi chú
+    
     modalNote.addEventListener("input", (event) => {
         if (currentProduct) {
             currentProduct.note = event.target.value;
         }
     });
 
-    // Thêm sản phẩm vào giỏ hàng
+   
     addToCartButton.addEventListener("click", () => {
         if (currentProduct) {
             console.log("Sản phẩm được thêm vào giỏ hàng:", currentProduct);
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
         modal.classList.add("hidden");
     });
 
-    // Đóng modal
+
     closeButton.addEventListener("click", () => {
         modal.classList.add("hidden");
     });
