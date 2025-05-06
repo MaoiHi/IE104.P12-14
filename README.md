@@ -20,9 +20,14 @@
 > https://niuelifeuit.com/
 
 ## 📽️ Presentation  
-> https://docs.google.com/presentation/d/13aEWEjqOXwYkcwJ69wTl64qMpZ4TeDXrC3SWsBNnKrc/edit?usp=sharing
+> [Group's resentation](https://docs.google.com/presentation/d/13aEWEjqOXwYkcwJ69wTl64qMpZ4TeDXrC3SWsBNnKrc/edit?usp=sharing)
+
 
 ---
+
+## 🛠️ Tools Used for Practice
+- **Hostinger** – Used for hosting the website.
+- **Wordpress** - Utilized for website design and content management.
 
 ## 📚 References
 
@@ -32,7 +37,3 @@
 
 
 ---
-
-## 🛠️ Tools Used for Practice
-- **Hostinger** – Used for hosting the website.
-- **Wordpress** - Utilized for website design and content management.
